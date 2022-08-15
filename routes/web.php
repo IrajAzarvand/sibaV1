@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Artisan;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,9 +24,28 @@ Route::middleware([
     'verified'
 ])->group(function () {
     Route::get('/dashboard', function () {
-        return view('dashboard');
+        return view('adminPanel.index');
     })->name('dashboard');
 });
 
 
 //panel routes
+
+Route::prefix('dashboard')->middleware('auth')->group(function () {
+    //migrate and seed database
+    Route::get('/mrs', function () {
+        Artisan::call('migrate:refresh');
+        echo 'migration done.';
+        Artisan::call('db:seed');
+        echo 'database seed done.';
+        return back();
+    })->name('migrate-refresh');
+    // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+
+
+});
+
+Route::get('/createuser', function () {
+    return view('adminPanel.users.create');
+});
