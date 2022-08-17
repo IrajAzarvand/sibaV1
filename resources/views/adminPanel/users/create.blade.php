@@ -49,17 +49,35 @@
                             placeholder="رمزعبور را مجدد وارد نمایید">
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-2">
                     <div class="form-group">
                         <label for="MobileNumber">شماره موبایل</label>
                         <input id="MobileNumber" type="text" name="MobileNumber" class="form-control"
-                            placeholder="شماره موبایل خود را وراد نمایید" data-inputmask='"mask": "9999-999-9999"' data-mask>
+                            placeholder="وارد کردن شماره موبایل" data-inputmask='"mask": "9999-999-9999"' data-mask>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label for="MobileNumber">شماره داخلی</label>
+                        <input id="MobileNumber" type="text" name="MobileNumber" class="form-control"
+                            placeholder="وارد کردن شماره داخلی" data-inputmask='"mask": "9999-999-9999"' data-mask>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-4">
                     <div class="form-group">
+                        <label>معمولی</label>
+                        <select class="form-control select2" style="width: 100%;">
+                          <option selected="selected">مازندران</option>
+                          <option>شیراز</option>
+                          <option>گلستان</option>
+                          <option>اردبیل</option>
+                          <option>خوزستان</option>
+                          <option>سیستان و بلوچستان</option>
+                          <option>مشهد</option>
+                        </select>
+                      </div>
                         <label for="form_message">Message *</label>
                         <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *"
                             rows="4" required="required" data-error="Please,leave us a message."></textarea>
