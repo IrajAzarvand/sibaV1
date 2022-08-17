@@ -821,3 +821,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 //# sourceMappingURL=adminlte.js.map
+$(function () {
+    //Initialize Select2 Elements
+    $('.select2').select2()
+})

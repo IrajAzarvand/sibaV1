@@ -53,10 +53,12 @@ function JSLinks(string $type)
             return [
                 // <!-- Theme style -->
                 "plugins/jquery/jquery.min.js",
+                // bootstrap.bundle.min.js
+                "plugins/bootstrap/js/bootstrap.bundle.min.js",
                 // <!-- AdminLTE App -->
                 'dist/js/adminlte.js',
                 // <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-                'dist/js/pages/dashboard.js',
+                // 'dist/js/pages/dashboard.js',
                 // <!-- AdminLTE for demo purposes -->
                 'dist/js/demo.js',
 

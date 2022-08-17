@@ -55,6 +55,7 @@
     <!-- jQuery UI 1.11.4 -->
 
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
     {{-- <script src="../plugins/input-mask/jquery.inputmask.js"></script>
     <script src="../plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
     <script src="../plugins/input-mask/jquery.inputmask.extensions.js"></script> --}}
