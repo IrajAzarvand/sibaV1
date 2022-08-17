@@ -40,3 +40,6 @@
   .color-white{
     color: white;
   }
+  input, input::placeholder {
+    font-size: 13px;
+  }
