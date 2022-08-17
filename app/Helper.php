@@ -69,7 +69,8 @@ function JSLinks(string $type)
 
         case 'FormElements':
             return [
-                'plugins/select2/select2.full.min.js'
+                'plugins/select2/select2.full.min.js',
+                'plugins/input-mask/jquery.inputmask.js',
             ];
             break;
 

@@ -62,37 +62,60 @@
                 <div class="col-md-2">
                     <div class="form-group">
                         <label for="MobileNumber">شماره موبایل</label>
-                        <input id="MobileNumber" type="text" name="MobileNumber" class="form-control"
-                            placeholder="وارد کردن شماره موبایل" data-inputmask='"mask": "9999-999-9999"' data-mask>
+                        <input id="MobileNumber" type="text" name="MobileNumber" class="form-control ltr"
+                            placeholder="وارد کردن شماره موبایل" data-inputmask='"mask": "99999999999"' data-mask>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="form-group">
-                        <label for="MobileNumber">شماره داخلی</label>
-                        <input id="MobileNumber" type="text" name="MobileNumber" class="form-control"
-                            placeholder="وارد کردن شماره داخلی" data-inputmask='"mask": "9999-999-9999"' data-mask>
+                        <label for="LocalNumber">شماره داخلی</label>
+                        <input id="LocalNumber" type="text" name="LocalNumber" class="form-control ltr"
+                            placeholder="وارد کردن شماره داخلی" data-inputmask='"mask": "999"' data-mask>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4">
                     <div class="form-group">
-                        {{-- @include('adminPanel.Elements.Select2') --}}
                         <label>شعبه</label>
                         <select class="form-control select2" style="width: 100%;">
                             <option selected="selected">مازندران</option>
                             <option>شیراز</option>
                             <option>گلستان</option>
-                            <option>اردبیل</option>
-                            <option>خوزستان</option>
-                            <option>سیستان و بلوچستان</option>
-                            <option>مشهد</option>
                         </select>
                     </div>
-                    <label for="form_message">Message *</label>
-                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *"
-                        rows="4" required="required" data-error="Please,leave us a message."></textarea>
-                    <div class="help-block with-errors"></div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>واحد</label>
+                        <select class="form-control select2" style="width: 100%;">
+                            <option selected="selected">کارگزینی</option>
+                            <option>دفترمدیریت</option>
+                            <option>IT</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label>سمت</label>
+                        <select class="form-control select2" style="width: 100%;">
+                            <option selected="selected">مسئول</option>
+                            <option>مدیر</option>
+                            <option>کارشناس</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label>سمت</label>
+                        <select class="form-control select2" style="width: 100%;">
+                            <option selected="selected">مسئول</option>
+                            <option>مدیر</option>
+                            <option>کارشناس</option>
+                        </select>
+                    </div>
                 </div>
             </div>
             <div class="col-md-12">

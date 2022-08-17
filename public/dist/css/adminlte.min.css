@@ -40,6 +40,33 @@
   .color-white{
     color: white;
   }
-  input, input::placeholder {
+  input{
     font-size: 13px;
   }
+  input::placeholder {
+    font-size: 13px;
+    text-align: right;
+  }
+  .select2-container .select2-selection--single{
+    height: 40px !important;
+  }
+.select2-container .select2-selection--single .select2-selection__rendered{
+    padding-top: 4px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+    top: 8px !important;
+    left: 1px;
+    width: 26px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b{
+    height: 0;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -2px;
+    position: absolute;
+    top: 68%;
+    width: 0;
+}
+.select2-container .select2-selection--single .select2-selection__rendered{
+    padding-right: 11px !important;
+}
