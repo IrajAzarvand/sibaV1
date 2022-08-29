@@ -41,7 +41,8 @@
     color: white;
   }
   input{
-    font-size: 13px;
+    font-size: 14px !important;
+    color: #000 !important;
   }
   input::placeholder {
     font-size: 13px;
@@ -70,3 +71,10 @@
 .select2-container .select2-selection--single .select2-selection__rendered{
     padding-right: 11px !important;
 }
+label:not(.form-check-label):not(.custom-file-label) {
+    font-weight: 700;
+    font-size: 13.7px;
+  }
+  .required{
+    color: red;
+  }

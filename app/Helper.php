@@ -11,11 +11,13 @@ function CSSLinks(string $type)
                 'dist/css/bootstrap-rtl.min.css',
                 // <!-- template rtl version -->
                 'dist/css/custom-style.css',
+
             ];
             break;
         case 'FormElements':
             return [
                 'plugins/select2/select2.min.css',
+                'dist/css/persian-datepicker.min.css'
             ];
             break;
     }
@@ -71,6 +73,10 @@ function JSLinks(string $type)
             return [
                 'plugins/select2/select2.full.min.js',
                 'plugins/input-mask/jquery.inputmask.js',
+                'plugins/input-mask/jquery.inputmask.date.extensions.js',
+                'dist/js/persian-date.min.js',
+                'dist/js/persian-datepicker.min.js'
+
             ];
             break;
 
