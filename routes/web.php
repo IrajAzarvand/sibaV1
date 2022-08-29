@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminCreateUserFormFieldController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
 
@@ -42,8 +43,8 @@ Route::prefix('dashboard')->middleware('auth')->group(function () {
     })->name('migrate-refresh');
     // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-
-
+    //user form fields
+    Route::get('/RegisterFormPermissions', [AdminCreateUserFormFieldController::class, 'createNewUser'])->name('RegisterFormPermissions');
 });
 
 Route::get('/createuser', function () {
