@@ -10,6 +10,7 @@
 
     {{-- add core css --}}
     {{-- @dd(CSSLinks()) --}}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     @foreach (CSSLinks('Admin') as $link)
         <link rel='stylesheet' href='{{ asset($link) }}'>
     @endforeach
@@ -47,14 +48,13 @@
         <!-- /.control-sidebar -->
     </div>
     <!-- ./wrapper -->
-
+    <script src="{{ asset('dist/js/jquery-ui.min.js') }}"></script>
     @yield('CustomJs')
     {{-- <!-- jQuery -->
 
         <script src="../plugins/jquery/jquery.min.js"></script> --}}
     <!-- jQuery UI 1.11.4 -->
 
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 
     {{-- <script src="../plugins/input-mask/jquery.inputmask.js"></script>
     <script src="../plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
@@ -87,8 +87,6 @@
     <script src="../plugins/slimScroll/jquery.slimscroll.min.js"></script>
     <!-- FastClick -->
     <script src="../plugins/fastclick/fastclick.js"></script> --}}
-
-
 </body>
 
 </html>
